@@ -6,11 +6,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="ca11c29d-d82b-4a91-818e-fd4e566eb5c6"
+    Name="2c417c19-86b4-4074-8850-e629a976982d"
     Version="1.0.0.0"
     Publisher="CN=jansc" />
 
-  <mp:PhoneIdentity PhoneProductId="ca11c29d-d82b-4a91-818e-fd4e566eb5c6" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <mp:PhoneIdentity PhoneProductId="2c417c19-86b4-4074-8850-e629a976982d" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
 
   <Properties>
     <DisplayName>Coder</DisplayName>
