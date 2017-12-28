@@ -18,6 +18,7 @@ namespace Coder
     /// <summary>
     /// Coder, a coding program
     /// </summary>
+    ///     
     public sealed partial class MainPage : Page
     {
         public MainPage()

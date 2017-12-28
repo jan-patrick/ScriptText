@@ -7,15 +7,33 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Page.BottomAppBar>
-        <AppBar IsOpen="True" IsSticky="True">
+        <AppBar IsOpen="True" IsSticky="True" Background="Transparent">
             <StackPanel Orientation="Horizontal">
-                <AppBarButton Name="New" Icon="Page" Label="New" Click="New_Click"/>
-                <AppBarButton Name="Open" Icon="Folder" Label="Open" Click="Open_Click"/>
-                <AppBarButton Name="Save" Icon="Save" Label="Save" Click="Save_Click"/>
+                <AppBarButton Name="New" Icon="Page" Label="New" Click="New_Click">
+                    <AppBarButton.KeyboardAccelerators>
+                        <KeyboardAccelerator 
+                        Modifiers="Control" 
+                        Key="N" />
+                    </AppBarButton.KeyboardAccelerators>
+                </AppBarButton>
+                <AppBarButton Name="Open" Icon="Folder" Label="Open" Click="Open_Click">
+                    <AppBarButton.KeyboardAccelerators>
+                        <KeyboardAccelerator 
+                        Modifiers="Control" 
+                        Key="O" />
+                    </AppBarButton.KeyboardAccelerators>
+                </AppBarButton>
+                <AppBarButton Name="Save" Icon="Save" Label="Save" Click="Save_Click">
+                    <AppBarButton.KeyboardAccelerators>
+                        <KeyboardAccelerator 
+                        Modifiers="Control" 
+                        Key="S" />
+                    </AppBarButton.KeyboardAccelerators>
+                </AppBarButton>
             </StackPanel>
         </AppBar>
     </Page.BottomAppBar>
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <TextBox Name="Display" AcceptsReturn="True" TextWrapping="Wrap" VerticalAlignment="Stretch"/>
+    <Grid Background="White" >
+        <TextBox Name="Display" AcceptsReturn="True" TextWrapping="Wrap" VerticalAlignment="Stretch" FontSize="20" Width="800" BorderBrush="White" BorderThickness="0"/>
     </Grid>
 </Page>

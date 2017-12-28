@@ -21,7 +21,7 @@ public class Library
 
     public async void New(TextBox display)
     {
-        if (await Confirm("Create New Document?", "Text Editor", "Yes", "No"))
+        if (await Confirm("Create New Document?", "Codetext", "Yes", "No"))
         {
             display.Text = string.Empty;
         }
