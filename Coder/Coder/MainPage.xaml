@@ -34,6 +34,6 @@
         </AppBar>
     </Page.BottomAppBar>
     <Grid Background="White" >
-        <TextBox Name="Display" AcceptsReturn="True" TextWrapping="Wrap" VerticalAlignment="Stretch" FontSize="20" Width="800" BorderBrush="White" BorderThickness="0"/>
+        <TextBox Name="Display" AcceptsReturn="True" TextWrapping="Wrap" VerticalAlignment="Stretch" FontSize="20" BorderBrush="White" BorderThickness="0" MaxWidth="800"/>
     </Grid>
 </Page>
