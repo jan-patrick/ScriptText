@@ -1,52 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Package
-  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
-  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
-  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-  IgnorableNamespaces="uap mp">
-
-  <Identity
-    Name="2c417c19-86b4-4074-8850-e629a976982d"
-    Version="1.0.0.0"
-    Publisher="CN=jansc" />
-
-  <mp:PhoneIdentity PhoneProductId="2c417c19-86b4-4074-8850-e629a976982d" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="5eaf7c5c-d8ca-4c21-b125-da640fc53d2f" Publisher="CN=jansc" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="5eaf7c5c-d8ca-4c21-b125-da640fc53d2f" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Coder</DisplayName>
     <PublisherDisplayName>jansc</PublisherDisplayName>
-    <Logo>images\storelogo.png</Logo>
+    <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
-
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
   </Dependencies>
-
   <Resources>
     <Resource Language="x-generate" />
   </Resources>
-
   <Applications>
-    <Application 
-      Id="App"
-      StartPage="index.html">
-
-      <uap:VisualElements
-        DisplayName="Coder"
-        Description="Coder"
-        BackgroundColor="transparent"
-        Square150x150Logo="images\Square150x150Logo.png"
-        Square44x44Logo="images\Square44x44Logo.png">
-
-        <uap:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" />
-        <uap:SplashScreen Image="images\splashscreen.png" />
-
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Coder.App">
+      <uap:VisualElements DisplayName="Coder" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Coder" BackgroundColor="transparent">
+        <uap:LockScreen Notification="badge" BadgeLogo="Assets\BadgeLogo.png" />
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\LargeTile.png" Square71x71Logo="Assets\SmallTile.png">
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
     </Application>
   </Applications>
-
   <Capabilities>
     <Capability Name="internetClient" />
   </Capabilities>
-
 </Package>
