@@ -41,5 +41,10 @@ namespace Coder
         {
             Library.Save(Display);
         }
+
+        private void Share_Click(object sender, RoutedEventArgs e)
+        {
+            Library.Share(Display);
+        }
     }
 }

@@ -5,7 +5,9 @@
     xmlns:local="using:Coder"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    Background="Transparent"
+    >
     <Page.BottomAppBar>
         <AppBar IsOpen="True" IsSticky="True" Background="Transparent">
             <StackPanel Orientation="Horizontal">
@@ -30,10 +32,17 @@
                         Key="S" />
                     </AppBarButton.KeyboardAccelerators>
                 </AppBarButton>
+                <AppBarButton Name="Share" Icon="Share" Label="Share" Click="Save_Click">
+                    <AppBarButton.KeyboardAccelerators>
+                        <KeyboardAccelerator 
+                        Modifiers="Control" 
+                        Key="T" />
+                    </AppBarButton.KeyboardAccelerators>
+                </AppBarButton>
             </StackPanel>
         </AppBar>
     </Page.BottomAppBar>
-    <Grid Background="White" >
-        <TextBox Name="Display" AcceptsReturn="True" TextWrapping="Wrap" VerticalAlignment="Stretch" FontSize="20" BorderBrush="White" BorderThickness="0" MaxWidth="800"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+        <TextBox Name="Display" AcceptsReturn="True" TextWrapping="Wrap" VerticalAlignment="Stretch" FontSize="20" BorderBrush="White" BorderThickness="0" MaxWidth="800" Background="#FFFFFF"/>
     </Grid>
 </Page>

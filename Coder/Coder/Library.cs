@@ -65,4 +65,16 @@ public class Library
 
         }
     }
+
+    public async void Share(TextBox display)
+    {
+        try
+        {
+            Windows.ApplicationModel.DataTransfer.DataTransferManager.ShowShareUI();
+        }
+        catch
+        {
+
+        }
+    }
 }
