@@ -12,6 +12,10 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.ApplicationModel;
+using Windows.ApplicationModel.DataTransfer;
+using Windows.Storage;
+using Windows.Storage.Pickers;
 
 namespace Coder
 {
@@ -26,6 +30,12 @@ namespace Coder
             this.InitializeComponent();
         }
         public Library Library = new Library();
+
+        private void RegisterForShare()
+        {
+            DataTransferManager dataTransferManager = DataTransferManager.GetForCurrentView();
+            dataTransferManager.DataRequested += new TypedEventHandler<DataTransferManager, DataRequestedEventArgs>(this.ShareImageHandler);
+        }
 
         private void New_Click(object sender, RoutedEventArgs e)
         {
@@ -46,5 +56,6 @@ namespace Coder
         {
             Library.Share(Display);
         }
+
     }
 }

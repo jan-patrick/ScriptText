@@ -1,15 +1,7 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/jan-patrick/Coder/master/githublogo1.png" width=80><br>
-</p>
-<h1 align="center">Codetext</h1>
+<h1 align="center">ScriptText</h1>
 <br>
 <p align="center">
-  Codetext is an superfast, small and minimalistic text editor written in C# for the UWP.
-  <br>
-  In the future it shall support more filetypes (js, html, css, ...).
-  <br>
-  <br>
-  <a href="https://www.microsoft.com/store/"><img src="https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png" width=300 alt="Get it from Microsoft Store" /></a>
+  ScriptText is an superfast, small and minimalistic text editor written in C# for the UWP.
   <br>
   <br>
   <br>

@@ -6,6 +6,8 @@ using Windows.Storage.Pickers;
 using Windows.Storage.Provider;
 using Windows.UI.Popups;
 using Windows.UI.Xaml.Controls;
+using Windows.ApplicationModel;
+using Windows.ApplicationModel.DataTransfer;
 
 public class Library
 {
@@ -66,11 +68,11 @@ public class Library
         }
     }
 
-    public async void Share(TextBox display)
+    public void Share(TextBox display)
     {
         try
         {
-            Windows.ApplicationModel.DataTransfer.DataTransferManager.ShowShareUI();
+            DataTransferManager.ShowShareUI();
         }
         catch
         {
