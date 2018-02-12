@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/jan-patrick/ScriptText/master/ScriptText/ScriptText/ScriptText/Assets/StoreLogo.scale-400.png" width=80><br>
+</p>
 <h1 align="center">ScriptText</h1>
 <br>
 <p align="center">
