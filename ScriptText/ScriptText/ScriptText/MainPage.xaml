@@ -11,21 +11,21 @@
     <Page.BottomAppBar>
         <AppBar IsOpen="True" IsSticky="True" Background="Transparent">
             <StackPanel Orientation="Horizontal">
-                <AppBarButton Name="New" Icon="Page" Label="New" Click="New_Click">
+                <AppBarButton Name="New" Icon="Page" Label="New" Click="New_Click" PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited">
                     <AppBarButton.KeyboardAccelerators>
                         <KeyboardAccelerator 
                         Modifiers="Control" 
                         Key="N" />
                     </AppBarButton.KeyboardAccelerators>
                 </AppBarButton>
-                <AppBarButton Name="Open" Icon="Folder" Label="Open" Click="Open_Click">
+                <AppBarButton Name="Open" Icon="Folder" Label="Open" Click="Open_Click" PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited">
                     <AppBarButton.KeyboardAccelerators>
                         <KeyboardAccelerator 
                         Modifiers="Control" 
                         Key="O" />
                     </AppBarButton.KeyboardAccelerators>
                 </AppBarButton>
-                <AppBarButton Name="Save" Icon="Save" Label="Save" Click="Save_Click">
+                <AppBarButton Name="Save" Icon="Save" Label="Save" Click="Save_Click" PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited">
                     <AppBarButton.KeyboardAccelerators>
                         <KeyboardAccelerator 
                         Modifiers="Control" 

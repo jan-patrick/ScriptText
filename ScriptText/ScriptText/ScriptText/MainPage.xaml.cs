@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Core;
 
 namespace ScriptText
 {
@@ -20,9 +21,12 @@ namespace ScriptText
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        CoreCursor buttonCursor = null;
+        CoreCursor cursorBeforePointerEntered = null;
         public MainPage()
         {
             this.InitializeComponent();
+            buttonCursor = new CoreCursor(CoreCursorType.Hand, 0);
         }
         public Library Library = new Library();
 
@@ -39,6 +43,19 @@ namespace ScriptText
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             Library.Save(Display);
+        }
+        private void Button_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            // Cache the cursor set before pointer enter on button.
+            cursorBeforePointerEntered = Window.Current.CoreWindow.PointerCursor;
+            // Set button cursor.
+            Window.Current.CoreWindow.PointerCursor = buttonCursor;
+        }
+
+        private void Button_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            // Change the cursor back.
+            Window.Current.CoreWindow.PointerCursor = cursorBeforePointerEntered;
         }
     }
 }
