@@ -26,6 +26,7 @@ public class Library
         if (await Confirm("Create New Document?", "Codetext", "Yes", "No"))
         {
             display.Text = string.Empty;
+            display.Select(display.Text.Length, 0);
         }
     }
 
@@ -38,6 +39,7 @@ public class Library
             picker.FileTypeFilter.Add(".txt");
             StorageFile file = await picker.PickSingleFileAsync();
             display.Text = await FileIO.ReadTextAsync(file);
+            display.Select(display.Text.Length, 0);
         }
         catch
         {
