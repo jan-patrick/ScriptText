@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10" IgnorableNamespaces="uap mp iot">
-  <Identity Name="21595JanPatrick.3175857FA80F6" Publisher="CN=BA624AF2-A2EC-4181-B8CC-439AB4359A21" Version="1.1.6.0" />
+  <Identity Name="21595JanPatrick.3175857FA80F6" Publisher="CN=BA624AF2-A2EC-4181-B8CC-439AB4359A21" Version="1.2.7.0" />
   <mp:PhoneIdentity PhoneProductId="8e105997-424e-4cbb-b59d-835be349e660" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>ScriptText</DisplayName>
